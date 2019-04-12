@@ -5,6 +5,9 @@ import {Howl, Howler} from 'howler';
 import ReactHowler from 'react-howler';
 import sound from './media/scratchy-bells.mp3'
 
+var soundHowl = new Howl({
+  src: ['./media/scratchy-bells.mp3'],
+})
 
 class App extends Component {
   
@@ -13,7 +16,6 @@ class App extends Component {
     this.state = {
       clicked : false,
     }
-
     this.handleClick = this.handleClick.bind(this);
 
   }
